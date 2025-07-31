@@ -29,7 +29,7 @@ def main():
     print_grid(snake,dir,foodcell)
     
     while True:
-        new_dir = input("Enter New Direction(U/D/L/R):")
+        new_dir = input("Enter New Direction(U/D/L/R):").upper()
         dx,dy = 0,0
         if new_dir=="U": dx = -1
         if new_dir=="D": dx = 1
